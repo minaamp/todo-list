@@ -1,0 +1,140 @@
+body{
+    background-color: rgb(232, 245, 255);
+    background-image: radial-gradient(
+        rgba(219, 219, 219, 0.621) 3px,
+        transparent 3px
+    );
+    background-size: 25px 25px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Playpen Sans Arabic', sans-serif;
+
+}
+/*کادر اضافه کردن لیست کارها*/
+.Add{
+    display: flex;
+    justify-content: center;
+}
+
+#addInput{
+    font-family: 'PlayPen Sans Arabic', sans-serif;
+    font-size: 20px;
+    padding: 8px 8px;
+    margin-left: 8px;
+    width: 50%;
+    border: solid, 2px;
+    border-radius: 10px;
+    box-shadow: -3px 3px 0px rgb(89, 95, 99);
+    transition: box-shadow 0.15s;
+}
+#addInput:hover{
+    box-shadow: none;
+}
+#addInput:focus {
+    outline: none;
+    border-color: #8b6f47;
+    box-shadow: none;
+}
+
+#addBtn{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 165, 206);
+    font-family: 'PlayPen Sans Arabic', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 8px;
+    margin-left: 8px;
+    box-shadow: -3px 3px 0px rgb(89, 95, 99);
+    transition: box-shadow 0.15s;
+}
+#addBtn:hover{
+    cursor: pointer;
+    box-shadow: none;
+    
+}
+#addBtn:active{
+    transform: translateX(2px);
+    background-color: rgb(232, 138, 180);
+
+}
+
+/*کادر اصلی لیست*/
+.list-container{
+    font-family: 'PlayPen Sans Arabic', sans-serif;
+    background-color: rgb(255, 253, 247);
+    width: 65%;
+    max-width: 650px;
+    min-height: 100px;
+    margin: 35px auto;
+    border: 2px solid rgb(228, 217, 198);
+    border-radius: 15px;
+    box-shadow: -3px 3px 0px rgb(89, 95, 99);
+    box-sizing: border-box;
+}
+
+.list-container h2{
+    font-size: 20px;
+    padding: 5px 15px;
+    color: rgb(85, 75, 67);
+    margin-top: 0;
+    border-bottom: 2px dashed #e4d9c6;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#taskList li{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'PlayPen Sans Arabic', sans-serif;
+    font-size: 17px;
+    color: rgb(81, 74, 69);
+    padding: 12px 5px;
+    border-bottom: 1px dashed #e4d9c6;
+    overflow-wrap: anywhere;
+}
+
+#taskList input[type="checkbox"] {
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+    accent-color: #ffa5ce;
+    cursor: pointer;
+}
+
+
+
+#taskList li.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn{
+    border: solid 2px rgb(81, 74, 69);
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    flex-shrink: 0;
+    align-items: start;
+}
+.delete-btn:hover {
+    color: #e05282;
+    border-color: #e05282;
+    background-color: rgb(223, 220, 214);
+}
+
+@media (max-width: 600px) {
+    .list-container {
+        width: 92%;
+        padding: 14px;
+    }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My To-Do List</title>
+	<link rel="stylesheet" href="todo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Arabic:wght@100..800&family=Roboto:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>لیست کارها</h1>
+	<div class="Add">
+		<input id="addInput" type="text" placeholder="یک ایتم وارد کنید">
+		<button id="addBtn" onclick="addTask()">اضافه کردن</button>
+	</div>
+	<div class="list-container">
+		<h2>کارهای من</h2>
+		<ul id="taskList"></ul>
+	</div>
+	<script src="todo.js"></script>
+</body>
+</html>
